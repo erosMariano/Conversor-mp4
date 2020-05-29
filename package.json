@@ -1,0 +1,19 @@
+{
+  "name": "downloader",
+  "version": "1.0.0",
+  "description": "Essa aplicação tem intuíto de gerar um conversor de vídeos do youtube para mp3",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "Eros Mariano",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "ytdl-core": "^2.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

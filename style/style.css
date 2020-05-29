@@ -1,0 +1,157 @@
+@font-face{
+    font-family:berlin;
+    src: url(../fonte/berlin-sans-fb-3.ttf);
+}
+@font-face{
+    font-family: berlin-bold;
+    src: url(../fonte/berlin-sans-fb-demi-bold.ttf);
+}
+body{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 99%;
+ 
+}
+.container{
+    text-align: center;
+    background-size: cover; 
+    width: 100%;
+}
+
+h1{
+    display: inline-block;
+    font-size: 3.5em;
+    font-family: berlin-bold;
+    width: 800px;
+    margin: auto;
+    color:transparent;
+    -webkit-text-stroke-width:2px;
+    -webkit-text-stroke-color:#fcda21;
+    margin-top:100px;
+    text-transform: uppercase;
+}
+
+input[type="text"]{
+    width:500px;
+    height: 35px;
+    border: 2px solid #fff;
+    background-color:transparent;
+    font-family: berlin;
+    color:#fcda21;
+    margin-top:30px;
+    border-radius: 5px;
+    font-size: 2em;
+    padding-left: 10px;
+    outline:none;
+    transition:.5s;
+}
+
+::-webkit-input-placeholder {
+    color: #fcda21;
+    opacity: 50%;
+ }
+
+li {
+    display: inline-block;
+}
+.icone{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+}
+
+input[type="submit"]{
+    border: 2px solid white;
+    font-family: berlin;
+    color:#fcda21;
+    background-color:transparent;
+    padding:5px;
+    width: 120px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top:30px;
+    outline: none;
+    transition: .5s;
+    cursor:pointer;
+
+}
+input[type="text"]:focus,input[type="submit"]:hover{
+    background-color: rgba(255,255,255,.2);
+    border-color:#fcda21;
+}
+
+.enviar{
+    display:flex;
+    width: 400px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+/* Videos */
+#videoListContainer{
+    width: 100%;
+    /* display:flex;
+    justify-content: space-between; */
+    flex-wrap: wrap;
+  
+}
+.paginate{
+    color: #fcda21;
+    font-size: 1em;
+    text-decoration: none;
+    font-family: berlin;
+}
+h4{
+    font-family: berlin-bold;
+    color: #fcda21;
+    font-size: 2.5em;
+}
+
+#videoListContainer p{
+    color: #fcda21;
+    font-family: berlin;
+    font-size: 1em;
+    width:480px;
+}
+.downloader{
+    display:flex;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+button{
+    background-color: transparent;
+    border:none;
+    cursor:pointer;
+}
+
+@media(max-width:800px){
+    h1{
+        font-size: 2.5em;
+        width: 600px;
+    }
+    input[type="text"]{
+        width: 500px;
+    }
+}
+@media(max-width:610px){
+    h1{
+        font-size: 2em;
+        width: 90%;
+    }
+    input[type="text"]{
+        width: 90%;
+    }
+    a img{
+        width: 285px;
+        height: 200px;
+    }
+    #videoListContainer p{
+        width: 285px;
+    }
+    button img{
+        width: 40px;
+        height: 40px;
+    }
+}
